@@ -1,0 +1,24 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+
+/*
+<a href="/">
+  <form ...>
+    <button ...>
+  </form>
+</a>
+*/
+
+a.btn {
+  border: 1px solid gray;
+  background-color: #c0d6e4;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#blogpost
