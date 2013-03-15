@@ -1,13 +1,13 @@
 <div class="container">
   <a class="btn" href="/">Home</a><br>
 
-  <h1>New Post</h1>
-  <form method="post" action="/posts" id="blogpost">
+  <h1>Edit Post</h1>
+  <form method="post" action="/posts/<%=@post.id%>/edit" id="blogpost">
     <input type="text" name="title" placeholder="Edit post title" value="<%= @post.title%>"><br><br>
-    <textarea name="body" placeholder="Edit your post!" value="<%= @post.body%>"></textarea>
+    <textarea name="body" placeholder="Edit your post!"><%= @post.body%></textarea>
     <!-- Need to include tags -->
 
     <br><br>
-    <input type="submit" value="Post it!">
+    <input type="submit" value="Update Post">
   </form>
 </div>

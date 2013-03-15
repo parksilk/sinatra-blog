@@ -21,13 +21,14 @@ get "/posts/:id" do
   erb :post
 end
 
-get "/posts/edit" do
+get "/posts/:id/edit" do
   @post = Post.where("id = ?", params[:id]).first
   erb :edit_post
 end
 
-post "/posts/edit" do
-  @post = Post.update :title => params[:title],
-                      :body  => params[:body]
+post "/posts/:id/edit" do
+  @post = Post.where("id = ?", params[:id]).first
+  @post.update_attributes :title => params[:title],
+                          :body  => params[:body]
   redirect "/posts"
 end
