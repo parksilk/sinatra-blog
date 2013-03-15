@@ -1,11 +1,10 @@
-
 <div class="container">
   <a class="btn" href="/">Home</a><br>
 
   <h1>New Post</h1>
   <form method="post" action="/posts" id="blogpost">
-    <input type="text" name="title" placeholder="Post Title"><br><br>
-    <textarea name="body" placeholder="Write your post!"></textarea>
+    <input type="text" name="title" placeholder="Edit post title" value="<%= @post.title%>"><br><br>
+    <textarea name="body" placeholder="Edit your post!" value="<%= @post.body%>"></textarea>
     <!-- Need to include tags -->
 
     <br><br>
