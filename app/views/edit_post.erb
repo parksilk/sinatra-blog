@@ -3,7 +3,7 @@
 
   <h1>Edit Post</h1>
   <form method="post" action="/posts/<%=@post.id%>/edit" id="blogpost">
-    <input type="text" name="title" placeholder="Edit post title" value="<%= @post.title%>"><br><br>
+    <input type="text" name="title" placeholder="Edit post title" value="<%= @post.title%>" autofocus="autofocus"><br><br>
     <textarea name="body" placeholder="Edit your post!"><%= @post.body%></textarea>
     <!-- Need to include tags -->
 

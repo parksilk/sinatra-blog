@@ -4,7 +4,7 @@
   <a class="btn" href="/">Home</a>
   <br><br>
   All posts:
-  <% if @posts.length != 0%>
+  <% unless @posts.length == 0%>
     <% @posts.reverse.each do |post| %>
       <h3><a href="/posts/<%=post.id%>"><%= post.title %></h3></a>
       <%= post.body %>

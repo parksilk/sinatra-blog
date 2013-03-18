@@ -14,8 +14,6 @@ post "/posts" do
 end
 
 
-
-
 get "/posts/:id" do
   @post = Post.where("id = ?", params[:id]).first
   erb :post
